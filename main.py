@@ -193,26 +193,3 @@ while True:
             print("Будь внимательнее!")
 
         print("Думаю ты отлично справился! :)")
-    print("ru - русский")
-    print("en - английский")
-    print("de - немецкий")
-    print("fr - французский")
-
-    lang = input("Код языка: ")
-
-    if lang not in ["ru", "en", "de", "fr"]:
-        print("Ошибка: неверный язык")
-    else:
-        result = translator.translate(text, dest=lang)
-
-        print("Перевод текста:")
-        print(result.text)
-
-
-elif choice == "2":
-
-    print("Количество символов:", len(text))
-
-
-else:
-    print("Неверный выбор")
